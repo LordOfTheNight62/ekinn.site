@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= statusCode + " - Ekin'in sitesi" %></title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/icons/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/ekinnsite_logo.png">
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <main class="container-lg">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h2 class="display-2">
+                    <% if(statusCode === "500") { %>
+                        <i class="bi bi-5-square"></i><i class="bi bi-0-square mx-1"></i><i class="bi bi-0-square"></i>
+                    <% } else {%>
+                        <i class="bi bi-4-square"></i><i class="bi bi-0-square mx-1"></i><i class="bi bi-4-square"></i>
+                    <% } %>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><p class="fs-1"><%= message %></p></div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-auto mx-auto my-5">
+                    <a class="btn btn-outline-primary btn-open-icon w-100" href="/" role="button">Ana Sayfaya Dön</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

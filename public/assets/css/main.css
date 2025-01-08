@@ -1,0 +1,94 @@
+:root {
+  --app-primary-color: #EB2315;
+}
+
+::selection {
+  background-color: var(--app-primary-color); /* Seçilen metnin arka plan rengi */
+  color: #f8f9fa;; /* Seçilen metnin yazı rengi */
+}
+
+.bg-app-primary{background-color: var(--app-primary-color); color: #f8f9fa;}
+.text-app-primary{color: var(--app-primary-color);}
+
+
+/* Kaydırma çubuğunun tüm öğesini tanımlar */
+::-webkit-scrollbar {
+  width: 10px; /* Dikey kaydırma çubuğunun genişliği */
+  height: 10px; /* Yatay kaydırma çubuğunun yüksekliği */
+}
+
+/* Kaydırma çubuğunun "kulp" (thumb) kısmını tanımlar */
+::-webkit-scrollbar-thumb {
+  background-color: #0d6efd; /* Kulp rengini belirler */
+}
+
+/* Kaydırma çubuğunun "track" (arka plan) kısmını tanımlar */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Track arka plan rengini belirler */
+  border-radius: 10px; /* Kenarları yuvarlatır */
+}
+
+/* Kaydırma çubuğunun üzerine gelindiğinde kulpun rengini değiştirir */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3a87fc; /* Kulp üzerine gelindiğinde renk değişir */
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+a img,
+img,
+.no-drag-select {
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-open-icon:hover::before {
+  content: '\27A1';
+  padding-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.neon-box-shadow{box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 20px #0d6efd;animation: neon-effect 1.5s ease-in-out infinite alternate;}
+
+@keyframes neon-effect {
+  0% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 20px #0d6efd;
+  }
+  10% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 18px #0d6efd;
+  }
+  20% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 16px #0d6efd;
+  }
+  30% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 14px #0d6efd;
+  }
+  40% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 12px #0d6efd;
+  }
+  50% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 10px #0d6efd;
+  }
+  60% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 8px #0d6efd;
+  }
+  70% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 6px #0d6efd;
+  }
+  80% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 4px #0d6efd;
+  }
+  90% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 2px #0d6efd;
+  }
+  100% {
+    box-shadow: 0 0 1px #0d6efd, 0 0 3px #0d6efd, 0 0 0px #0d6efd;
+  }
+}

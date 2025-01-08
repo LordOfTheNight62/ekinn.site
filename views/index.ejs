@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Ekin'in proje geliştirme sitesi, çeşitli projeler ve geliştirme araçları sunmaktadır. Sohbet uygulaması ve blog paylaşımı gibi projelerimizi keşfedin.">
+    <meta name="keywords" content="ekin, ekinn, ekinin sitesi, ekin site, proje geliştirme, sohbet uygulaması, blog paylaşımı, web projeleri, yazılım geliştirme">
+    <meta name="theme-color" content="#EB2315">
+    <meta name="apple-mobile-web-app-title" content="Ekin'in Sitesi">
+    <meta property="og:title" content="Ekin'in Proje Geliştirme Sitesi">
+    <meta property="og:description" content="Projelerinizi geliştirin ve paylaşın. Sohbet uygulamaları, bloglar ve daha fazlası.">
+    <meta property="og:image" content="https://ekinn.site/assets/img/ekinnsite_logo.png">
+    <meta property="og:url" content="https://www.ekinn.site">
+    <meta name="google-adsense-account" content="ca-pub-9050645484930137">
+    <title>Ekin'in sitesi - Proje Geliştirme Sitesi</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/icons/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="/assets/icons/ekinnsite_logo.ico">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9050645484930137"
+     crossorigin="anonymous"></script>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <main class="container-lg p-4 rounded-3 mb-5">
+        <div class="container-fluid text-center">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col d-flex align-items-center justify-content-center justify-content-lg-end">
+                  <a class="no-drag-select" href="/">
+                      <img class="rounded-circle" src="/assets/img/ekinnsite_logo.png" alt="ekinn.site logo" style="width: calc(4rem + 6vw);">
+                  </a>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <h1 class="display-1 my-5"><i class="bi bi-stars text-primary"></i> Ekin</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-auto mx-auto my-5">
+                    <button class="btn bg-primary text-light w-100 position-relative rounded-1" type="button" data-bs-toggle="modal" data-bs-target="#supriseModal">
+                      <i class="bi bi-gift"></i> Sürprizler
+                      <span class="bg-app-primary position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                        +99
+                      </span>
+                    </button>
+                </div>
+            </div>
+            <div class="row text-center mb-1">
+              <div class="col-12">
+                <span class="bg-app-primary fw-bold p-2 rounded-top-3"><i class="bi bi-geo-alt-fill"></i> IP Adresiniz <i class="bi bi-dot"></i> <%= userIp %></span>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="accordion text-start" id="faqAccordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              ekinn.site nedir?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                              <strong>ekinn.site proje geliştirme sitesidir.</strong> Farklı alan adları ile çeşitli projelere ev sahipliği yapacak bir projedir. (Örn: sohbet.ekinn.site, blog.ekinn.site) <code>Hello World!</code>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Site neden önemli?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                              <strong>Site fonksiyonel projeler geliştirmek için önemli bir adım.</strong> Zamanla birçok altyapı bu sitede kurulacak.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Site kim tarafından kuruldu?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                              <strong>14.11.2024</strong> tarihinde Ekin tarafından kuruldu.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-3">
+              <div class="col-12">
+                <h3>Projeler</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-end mb-3">
+                <a href="/softwares" class="btn bg-primary text-light rounded-1"><i class="bi bi-download"></i> Yazılımlar</a>
+              </div>
+            </div>
+
+            <div class="row mb-1">
+              <div class="col-12">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="row w-100 row-cols-1 row-cols-md-2 text-start">
+                      <div class="col">
+                        Kitap Bilgi Portalı
+                      </div>
+                      <div class="col">
+                        <span>
+                          <span><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://book.ekinn.site"><i class="bi bi-box-arrow-up-right"></i> Aç</a></span>
+                          (<i class="bi bi-globe2"></i> book.ekinn.site)
+                        </span>
+                      </div>
+                    </div>
+                    <span class="badge bg-success rounded-pill ms-2">Yayında</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="row mb-1">
+              <div class="col-12">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="row w-100 row-cols-1 row-cols-md-2 text-start">
+                      <div class="col">
+                        Sohbet Uygulaması
+                      </div>
+                      <div class="col">
+                        <span>
+                          <span><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="javascript:void(0)" onclick="showNotYetReadyToast()"><i class="bi bi-box-arrow-up-right"></i> Aç</a></span>
+                          (<i class="bi bi-globe2"></i> naberkanka.site)
+                        </span>
+                      </div>
+                    </div>
+                    <span class="badge bg-app-primary rounded-pill ms-2">Geliştiriliyor</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row mb-1">
+              <div class="col-12">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="row w-100 row-cols-1 row-cols-md-2 text-start">
+                      <div class="col">
+                        Blog Paylaşım Uygulaması
+                      </div>
+                      <div class="col">
+                        <span>
+                          <span><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="javascript:void(0)" onclick="showNotYetReadyToast()"><i class="bi bi-box-arrow-up-right"></i> Aç</a></span>
+                          (<i class="bi bi-globe2"></i> blog.ekinn.site)
+                        </span>
+                      </div>
+                    </div>
+                    <span class="badge bg-app-primary rounded-pill ms-2">Geliştiriliyor</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <span><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/LordOfTheNight62" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Ekin GitHub</a></span>
+          <strong>|</strong>
+          <span><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="javascript:void(0)"><i class="bi bi-incognito"></i> Gizlilik Politikası</a></span>
+        </div>
+
+        <div class="modal fade" id="supriseModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5"><i class="bi bi-gift"></i> Sürprizler</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                Süprizler çok yakında
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tamam</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="notYetReadyToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="/assets/img/ekinnsite_logo.png" class="rounded me-2" alt="ekinn.site_logo" width="32">
+              <strong class="me-auto">Proje şu an hazır değil</strong>
+              <small>Şimdi</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Şu an proje hazır değil, lütfen daha sonra tekrar deneyin
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>

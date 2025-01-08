@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin-panel
+Allow: /
+Sitemap: https://ekinn.site/sitemap.xml
