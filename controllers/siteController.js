@@ -8,6 +8,10 @@ exports.getSoftwaresPage = (req, res, next) => {
   res.render('../views/softwares');
 };
 
+exports.getGamesPage = (req, res, next) => {
+  res.render('../views/games');
+};
+
 exports.downloadEkin2000Winx64 = (req, res, next) => {
   res.download(
     path.join(__dirname, '..', 'public', 'downloads', 'Ekin2000-Installer.exe'),
